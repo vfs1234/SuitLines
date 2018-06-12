@@ -875,6 +875,9 @@ public class SuitLines extends View {
         Collections.sort(bakUnits);
         Unit maxUnit = bakUnits.get(bakUnits.size() - 1);
         maxValueOfY = Util.getCeil5(maxUnit.getValue());
+        if (maxValueOfY==0){
+            maxValueOfY = 10;
+        }
     }
 
     /**

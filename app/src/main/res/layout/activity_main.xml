@@ -25,7 +25,13 @@
             android:orientation="vertical">
 
 
-
+            <Button
+                android:id="@+id/go_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去测试activity"
+                android:onClick="onGoPractice"
+                />
             <TextView
                 android:text="|| 构造Line数据/增加/减少/动画"
                 android:layout_width="wrap_content"

@@ -1,6 +1,7 @@
 package tech.linjiang.suitlines.simple;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,11 @@ public class MainActivity extends Activity {
         onBtnClick2(null);
     }
 
+
+    public void onGoPractice(View view){
+        Intent i = new Intent(this, GraphTestActivity.class);
+        startActivity(i);
+    }
     public void onBtnClick(View view) {
         suitLines.anim();
     }
